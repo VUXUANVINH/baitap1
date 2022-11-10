@@ -1,21 +1,33 @@
-.h1 {
-  color: rgb(188, 200, 202);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 300%;
-}
-.blockquote {
-  border-left: 1cm;
-}
-.style {
-  text-align: left;
-  background-color: rgba(24, 163, 70, 0.555);
-  height: 30%;
-  width: 30%;
-}
-.right {
+body {
+  left: 5cm;
   position: absolute;
   right: 50px;
-  width: 200px;
-  border: 3px solid red;
+  width: 1000px;
   padding: 12px;
+}
+h1 {
+  color: rgb(25, 176, 202);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 500%;
+}
+.head {
+  text-align: inherit;
+  text-decoration-line: underline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200%;
+}
+.p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  word-spacing: 2px;
+}
+.quote {
+  border-left: 2px;
+  border-left-style: solid;
+  border-color: gray;
+  border-spacing: 10px;
+  color: rgb(85, 80, 80);
+}
+code {
+  color: red;
 }
