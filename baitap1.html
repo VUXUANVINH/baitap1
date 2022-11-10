@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <blockquote class="quote">
+    <q class="quote">
         Gần đây tôi tham gia thiết kế một dự án. Các thành viên trong nhóm cứ tạo
         những bảng có trường status, rồi thêm trường create_date và modified_date
         nhìn rất giống trong sách. Nhưng họ không hiểu rõ khác biệt giữa Action
         (Hành động) - Event (Sự kiện) - Status (Trạng thái) trong phân tích thiết
         kế phần mềm. Kết quả là bảng nhiều, cột nhiều nhưng không xử lý hết yêu
         cầu nghiệp vụ. Bàn tới bàn lui, mà không giải quyết được nghiệp vụ.
-    </blockquote>
+    </q>
     <h2 class="head">
         Action là động từ, Event là danh từ, còn Status là tính từ
     </h2>
@@ -33,12 +33,12 @@
     <p>
         Status: Trạng thái của đơn hàng là "được tạo" - order status is "created"
     </p>
-    <blockquote class="quote">
+    <q class="quote">
         Khách hàng đăng nhập -> khách hàng truy vấn tài khoản -> khách hàng nhập
         tài khoản cần chuyển khoản -> khách hàng chọn ngân hàng -> khách hàng gõ
         số tiền cần chuyển -> Hệ thống gửi mã OTP -> khách hàng nhập xác nhận ->
         tiến hành chuyển khoản -> Hệ thống gửi biên lai chuyển khoản.
-    </blockquote>
+    </q>
     <p>
         Action mô tả một người (role) hành động hay hệ thống (system) thực hiện
         tác vụ. Ở đây tôi cố ý phân biệt:
@@ -83,7 +83,7 @@
         lầm lớn nhất của lập trình viên CSDL chỉ lưu trạng thái (status) cuối cùng
         mà bỏ qua các hành động (action) - sự kiện (event) dẫn đến trạng thái đó.
         **</p>
-    <blockquote>
+    <q class="quote">
         Trong software engineering có một kỹ thuật gọi là Event Sourcing luôn lưu
         sự kiện chân thực nhất theo thực tế đã xảy ra, không sửa đổi, không xoá.
         Để đơn giản hoá, Action ban đầu cũng coi là một sự kiện ban đầu (initial
@@ -92,7 +92,7 @@
         Nếu không có hiệu ứng phụ, sai lệch số liệu, hệ thống chỉ cần chạy lại
         play back lại chuỗi event ghi trung thực những gì đã diễn ra thì có được
         trạng thái cuối cùng.
-    </blockquote>
+    </q>
     <h2 class="head">
         Lưu lại chân thực các sự kiện đã diễn ra - store immutable events
     </h2>
