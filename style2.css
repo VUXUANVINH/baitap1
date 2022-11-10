@@ -1,0 +1,12 @@
+body {
+  font-size: medium;
+  left: 5cm;
+  position: absolute;
+  right: 50px;
+  width: 1000px;
+  padding: 12px;
+}
+.head {
+  font-family: "Times New Roman", Times, serif;
+  text-size-adjust: 200%;
+}

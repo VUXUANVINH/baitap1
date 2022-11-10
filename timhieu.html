@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tìm hiểu kiến thức</title>
+    <h1>Bài Tìm Hiểu Kiến Thức</h1>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+</head>
+
+<body>
+    <h2 class="head">Quy tắc đặt tên class theo chuẩn BEM</h2>
+    <p>cách đặt tên </p>
+    <ol></ol>
+    <li><code>.block {} /* Block */</code></li>
+    <li><code>.block__element {} /* Element */</code></li>
+    <li><code>.block--modifier {} /* Modifier */</code></li>
+    </ol>
+    <img src="https://topdev.vn/blog/wp-content/uploads/2019/04/bem-la-gi.jpeg" alt="ảnh">
+    <p>Trong đó :</p>
+    <ol>
+        <li>Block: Là một thành phần của trang web hay ứng dụng đó, các thành phần của DOM cũng có thể là các block.
+            Block ở đây
+            thường là các thành phần header, body, content, footer</li>
+        <li>Elements: Là một thành phần của một block và sẽ không tồn tại độc lập mà không có block vì được đặt bên
+            trong nó, và
+            chúng phụ thuộc vào parent block của nó. Trong BEM, các phần tử được biểu thị bằng dấu gạch dưới kép __.
+        </li>
+        <li>Modifers: Được dùng để thao tác thay đổi cách hiển thị trên block hoặc phần tử. Ví dụ mình muốn tạo thêm một
+            block
+            .block__elem khác nữa và muốn làm nổi bật nó thì sẽ thêm một class .block__elem--hightlight để tạo sự khác
+            biệt đó.</li>
+    </ol>
+    <h2 class="head">Box model là gì? Các thuộc tính cơ bản của box model</h2>
+    <p>Box Model là một kỹ thuật cơ bản nhất trong CSS Layout và được sử dụng để bạn mô tả về khoảng cách mà mỗi phần tử
+        trên
+        website được sở hữu, hay nói cách khác là kỹ thuật tinh chỉnh khoảng cách hiển thị cho mỗi phần tử trên website.
+    </p>
+    <p>Các thuộc tình cơ bản của Box Model</p>
+    <p>Bao gồm 4 thuộc tính :</p>
+    <img src="https://thachpham.com/wp-content/uploads/2015/04/box-model.gif" alt="ảnh">
+    <ol>
+        <li class="li1"><strong>Margin</strong> Khoảng cách tính từ bên ngoài của phần tử.Trong khi Padding có nhiệm vụ
+            tạo
+            khoảng
+            cách giữa phần Content với Border thì Margin sẽ có tác dụng tạo khoảng cách từ
+            Border trở ra ngoài, nói dễ hiểu thì nó sẽ giúp bạn tinh chỉnh khoảng cách giữa các phần tử với nhau.</li>
+        <li class="li2"><strong>Border:</strong> Đường viền của phần tử.Border nghĩa là thuộc tính để bạn tạo viền cho
+            phần tử và nó
+            sẽ được khai báo bằng thuộc tính border trong CSS.</li>
+        <li class="li3"><strong>Padding:</strong> Khoảng cách tính từ bên trong của phần tử.Padding nghĩa là chúng ta sẽ
+            thiết lập khoảng cách được tính từ phần Content trở ra viền của phần tử, đơn giản vậy thôi.
+            Padding được khai báo trong CSS bởi thuộc tính padding với giá trị theo tuần tự top right bottom left (trên
+            > phải >
+            dưới > trái) và giá trị là số kèm theo đơn vị đo lường.</li>
+        <li><strong>Content:</strong> Nội dung trong phần tử.</li>
+    </ol>
+    <h2 class="head">3 quy tắc chi phối cách thuộc tính CSS áp dụng cho phần tử: Cascade - Specificity - Inheritance là
+        gì?</h2>
+    <ol>
+        <li><strong>CSS</strong> (viết tắt Cascading Style Sheets), trong đó “Cascading” có nghĩa là “Xếp tầng”, hay nói
+            cách khác, nếu
+            như không có
+            “Cascading” thì CSS sẽ có nghĩa là “Conflicting Style Sheets”.</li>
+        <li><strong>Specificity</strong> là cách mà trình duyệt quyết định sẽ áp dụng thuộc tính css nào với một phần tử
+            khi có nhiều quy
+            tắc css cùng trỏ đến
+            phần tử đó. Tính đặc hiệu dựa trên các quy tắc phù hợp bao gồm các loại selector (bộ chọn) CSS khác nhau.
+        </li>
+        <li><strong>Inheritance</strong>òn được gọi là kế thừa giá trị. Khi sử dụng inherit trong CSS, trình duyệt sẽ
+            tìm kiếm giá trị từ thành phần HTML cha
+            gần nó nhất và sử dụng lại giá trị đó. Nếu như phần tử cha cũng có giá trị là inherit, thì trình duyệt sẽ
+            tiếp tục đi
+            lên cho tới khi tìm thấy một giá trị nào đó.</li>
+    </ol>
+</body>
+
+</html>
