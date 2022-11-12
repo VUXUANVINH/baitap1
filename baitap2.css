@@ -1,0 +1,59 @@
+body {
+  border: 5px solid orange;
+  margin-left: 600px;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: absolute;
+}
+header {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px 0px 0px 0px;
+  width: 540px;
+  height: 350px;
+}
+img {
+  width: 540px;
+  margin-left: 0px;
+  margin-right: 20px;
+  height: 282px;
+  object-fit: fill;
+}
+.date {
+  padding: 0px 0px 10px 30px;
+  margin: 10px 100px 10px 10px;
+  background-color: white;
+  height: 30px;
+  width: 175px;
+  position: sticky;
+}
+.maincontent {
+  padding: 0px 3px 20px 30px;
+  margin-top: 0px;
+}
+.content {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(80, 74, 74);
+}
+.price {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+}
+.foot {
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  margin: 0px 0px 10px 0px;
+}
+.help {
+  display: inline-block;
+  border: 5px solid rgb(11, 112, 194);
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 5px;
+  background-color: rgb(11, 112, 194);
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
