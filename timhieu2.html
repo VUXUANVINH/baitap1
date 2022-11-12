@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="timhieu2.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="head">Flexbox là gì?</h1>
+        <p><code>FLEXBOX</code>là một kiểu dàn trang (layout mode) mà nó sẽ tự cân đối kích thước của các phần tử bên
+            trong để hiển thị trên mọi thiết
+            bị. Nói theo cách khác, bạn không cần thiết lập kích thước của phần tử, không cần cho nó float, chỉ cần
+            thiết lập nó
+            hiển thị chiều ngang hay chiều dọc, lúc đó các phần tử bên trong có thể hiển thị theo ý muốn.</p>
+        <p>Hiện nay, theo lời khuyên từ Mozilla thì chúng ta sử dụng <code>FLEXBOX</code>để thiết lập bố cục trong phạm
+            vi nhỏ (ví dụ như những khung trong website) và khi thiết lập bố cục ở phạm vi lớn hơn
+            (như chia cột website) thì vẫn nên sử dụng kiểu thông thường là dàn trang theo dạng lưới (grid layout).</p>
+        <p>Thuật ngữ các thành phần trong <code>FLEXBOX</code></p>
+        <p>rước khi đi vào tìm hiểu sâu hơn về <code>FLEXBOX</code>, chúng ta cần nắm qua cấu trúc của
+            <code>Flexbox</code> là như thế nào và một số thuật ngữ liên quan.
+        </p>
+        <p>Dưới đây là sơ đồ cấu trúc <code>FLEXBOX</code></p>
+        <img src="https://images.viblo.asia/839da714-330f-42b8-adf4-336cd7f95bd4.jpg" alt="flexbox">
+        <p>Hai thành phần quan trọng nhất trong một bố cục <code>Flexbox</code> là gồm <code>container</code> và
+            <code>item</code>:
+        </p>
+        <ul>
+            <li><code>container</code>là thành phần lớn bao quanh các phần tử bên trong, bạn sẽ thiết lập kiểu hiển thị
+                inline (sắp xếp theo chiều ngang) hoặc
+                kiểu sắp xếp theo chiều dọc. Khi đó, các item bên trong sẽ hiển thị dựa trên thiết lập của container
+                này.</li>
+            <li><code>item:</code>Các phần tử con của container được gọi là item, ở item bạn có thể thiết lập nó sẽ sử
+                dụng bao nhiêu cột trong một
+                container, hoặc thiết lập thứ tự hiển thị của nó.</li>
+
+        </ul>
+        <p>Ngoài hai thành phần chính đó, chúng ta có thể thấy hình trên sẽ có:</p>
+        <ul>
+            <li><code>mainstart ,mainend :</code>Khi thiết lập flexbox, điểm bắt đầu của container gọi là main start và
+                điểm
+                kết thúc được gọi là main end. Điều này có
+                nghĩa, các item bên trong sẽ heienr thị từ main start đến main end (hoặc là được phép hiển thị đến main
+                end). Và chiều
+                vuông góc của nó là cross start, cross end cũng có ý nghĩa tương tự nhưng luôn vuông góc với main start,
+                main end.</li>
+            <li><code>main axis</code>Trục này là trục chính để điều khiển hướng mà các item sẽ hiển thị. Như bạn thấy ở
+                trên hình main axis là trục dọc nên
+                các item sẽ hiển thị theo chiều dọc, tuy nhiên ta có thể sử dụng thuộc tính flex-direction để thay đổi
+                trục của main
+                axis và lúc đó các item sẽ hiển thị theo nó. Và cross axis luôn là trục vuông góc của main axis.</li>
+            <li><code>mainsize:</code>Bạn có thể hiểu đơn giản là kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo
+                trục main axis.</li>
+            <li><code>cross size:</code>Là kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục cross axis.</li>
+        </ul>
+        <p> Câu lệnh cơ bản để kích hoạt thuộc tính flexbox : <code> display:flex </code></p>
+        <h2>Các thuộc tính cơ bản của Flexbox</h2>
+        <div class="element">
+            <strong>Flex-direction</strong>
+            <p>Nếu bạn muốn đổi trục thì chỉ cần thêm thuộc tính <code>flex-direction</code>flex-direction :
+                <code>flex-direction:</code>
+            </p>
+            <div>
+                <ul>
+                    <li><code>row</code> Chuyển trục main axis thành chiều ngang, nghĩa là hiển thị theo hàng.</li>
+                    <li><code>column</code>Chuyển trục main axis thành chiều dọc, nghĩa là hiển thị theo cột.</li>
+                    <li><code>row-reverse</code>Hiển thị theo hàng nhưng đảo ngược vị trí các item.</li>
+                    <li><code>column-reverse</code>Hiển thị theo cột nhưng đảo ngược vị trí các item. Khá đơn giản đúng
+                        không?</li>
+                </ul>
+            </div>
+            <strong>Flex-wrap</strong>
+            <p>Thuộc tính wrap được chia làm 3 loại</p>
+            <div>
+                <ul>
+                    <li><code>nowrap</code>: dùng để chứa nội dung trên cùng 1 hàng và không bị nhảy lung tung khi vượt
+                        quá
+                        giới hạn của trang</li>
+                    <li><code>wrap</code>: dùng để chứa nội dung và đẩy nội dung xuống dòng khi nội dung bị quá giới hạn
+                        cho
+                        phép</li>
+                    <li><code>wrap-reverse</code>: dùng để chứa nội dung và ngược lại so với wrap</li>
+
+                </ul>
+            </div>
+            <strong>justify-content</strong>
+            <p>Mặc định các item bên trong sẽ rải đều bắt đầu từ main start đến main end, tuy nhiên nếu container vẫn
+                còn khoảng trống
+                thì có thể dùng thuộc tính justify-content để điều chỉnh lại vị trí bắt đầu của nó.</p>
+            <p>Bao gồm 5 giá trị theo ảnh dưới đây</p>
+            <img src="https://images.viblo.asia/dcc60875-3c80-405e-94a1-0dc7cffb6df5.jpg" alt="justify-content">
+            <strong>Flex-direction</strong>
+            <p>Khi bạn kích hoạt flex cho một phần tử thì các phần tử con trong đó sẽ được bố trí liên tục theo một
+                hướng gọi là hướng
+                chính. Và thuộc tính flex-direction chính là thuộc tính thiết lập lên hướng chính đó. Nếu bạn đã có
+                hướng chính rồi thì
+                hướng thứ hai sử dụng đến sẽ là hướng vuông góc với hướng chính</p>
+            <strong>Align-items</strong>
+            <p>Để căn chỉnh cho các item A, B, C, D. Như bạn thấy, các item được định vị là theo hàng, cột. Tuy nhiên,
+                khi thêm thuộc
+                tính align-items vào thì các item lại được căn chỉnh vào giữa theo vị trí đã định vị. Nó tác dụng đối
+                với tất cả những
+                items trong grid (Những item không được căn chỉnh trực tiếp)</p>
+        </div>
+    </div>
+</body>
+
+</html>
