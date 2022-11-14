@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="timhieu3.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Tìm Hiểu về Position trong HTML</h1>
+        <h2>Position trong CSS là gì?</h2>
+        <p>Position trong CSS được sử dụng với mục đích định vị vị trí hiển thị của các phần tử thẻ HTML và thường dùng
+            trong việc
+            xây dựng CSS cho menu nhiều cấp, tooltip và một số chức năng khác có liên quan đến vị trí.</p>
+        <img src="https://vietnix.vn/wp-content/uploads/2022/04/cac-thuoc-tinh-position-trong-css-1024x340.webp"
+            alt="position">
+        <ul>
+            <p>Khi thiết kế layout cho website, nếu chuyển từ file thiết kế ở định dạng HTML thì việc sử dụng thuộc tính
+                position trong
+                CSS là điều bắt buộc. Hiểu một cách đơn giản thì thuộc tính position xác định vị trí của một phần tử ở
+                trên trang. Có
+                năm loại position khác nhau trong CSS là:</p>
+            <li><code>static.</code></li>
+            <li><code>relative</code></li>
+            <li><code>fixed.</code></li>
+            <li><code>absolute.</code></li>
+            <li><code>sticky.</code></li>
+        </ul>
+        <h2>Các vị trí của position trong CSS</h2>
+        <p>Có 4 loại thuộc tính . Cụ thể :</p>
+        <ul>
+            <li><code>top</code> Giúp ta căn chỉnh phần tử từ trên xuống dưới nếu giá trị > 0 và ngược lại</li>
+            <li><code>bottom</code> Ngược lại với thuộc tính top, cho phép căn chỉnh phần tử từ dưới lên trên nếu giá
+                trị, ngược lại sẽ chạy xuống dưới nếu
+                có giá trị nhỏ hơn 0.</li>
+            <li><code>right</code> Giúp căn chỉnh phần tử qua phải nếu nhận giá trị > 0 và ngược lại.</li>
+            <li><code>left</code> Cho phép căn chỉnh phần tử qua phải nếu nhận giá trị > 0 và ngược lại.</li>
+        </ul>
+        <p>Khi sử dụng phần tử cha có thuộc tính position:relative, nếu muốn canh phần tử con theo phần tử cha và sử
+            dụng
+            position:absolute thì chúng ta sử dụng các thuộc tính vị trí ở trên để căn chỉnh.</p>
+        <ul>
+            <li>Nếu chỉ có giá trị top=0 và left=0 thì phần tử sẽ nằm trên cùng, góc trái.</li>
+            <li>Nếu chỉ có top=0 và right=0 thì phần tử sẽ nằm trên cùng, góc phải.</li>
+            <li>Nếu chỉ có bottom=0 và left=0 thì phần tử sẽ nằm dưới cùng, góc trái.</li>
+            <li>Nếu chỉ có bottom=0 và right=0 thì phần tử sẽ nằm dưới cùng, góc phải.</li>
+            <li>Nếu các giá trị khác 0 thì phần tử sẽ di chuyển theo những hướng đã đề cập ở phần trên.</li>
+            <li>Trong trường hợp cả 4 thuộc tính đều nhận giá trị bằng 0, thì phần tử con (absolute) sẽ phủ hết phần tử
+                cha (relative)
+                nếu không đặt các thuộc tính width và height cho phần tử con.</li>
+            <li>Nếu chỉ có top=0 và bottom=0 thì phần tử con có độ rộng là 100% của phần tử cha nếu không đặt thuộc tính
+                width cho phần
+                tử con.</li>
+            <li>Tương tự, nếu chỉ có top=0 và bottom=0 thì phần tử con có chiều cao bằng 100% của phần tử cha nếu không
+                đặt thuộc tính
+                height.</li>
+        </ul>
+        <h2>Các thuộc tính của position trong CSS</h2>
+        <p>Cú pháp của position trong CSS là:</p>
+        <p><code>position: value;</code></p>
+        <p>Trong đó value có có thể nhận những giá trị dưới đây:</p>
+        <ul>
+            <li><code>static</code> Vị trí ở trạng thái mặc định của phần tử (tức là các thuộc tính top, bottom, right,
+                left không có hiệu lực) div
+                {position:static;}.</li>
+            <li><code>relative</code> Vị trí tương đối so với vị trí mặc định div {position:relative; top:10px;
+                left:15px;}.</li>
+            <li><code>absolute</code> Vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ trình
+                duyệt div{position:absolute; top:10px;
+                left:15px;}</li>
+            <li><code>fixed</code> Định vị theo màn hình và luôn cố định ở một ví trí trên viewport (khu vực hiển thị nội
+                dung trên màn hình)
+                div{position:fixed; top:10px; left:15px;}.</li>
+            <li><code>sticky</code> Vị trí của phần tử được định vị khi người dùng sử dụng thanh cuộn.</li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
