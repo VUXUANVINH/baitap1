@@ -1,0 +1,60 @@
+*/ {
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 32px;
+  width: 32px;
+}
+a:visited {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a:link {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a:hover {
+  color: rgb(142, 152, 161);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.footercontainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1300px;
+  height: 400px;
+  background-color: rgb(32, 90, 145);
+  color: aliceblue;
+}
+footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 1285px;
+  height: 304px;
+  margin: 0px;
+  margin-right: 0px;
+}
+.decription-content {
+  display: flex;
+}
+.content {
+  display: flex;
+  width: 321.25px;
+  height: 320px;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 15px 0px 15px;
+}
+.content-introduce {
+  display: flex;
+  flex-direction: column;
+  justify-items: auto;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 0px;
+  width: 180px;
+}
