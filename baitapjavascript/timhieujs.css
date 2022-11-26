@@ -8,8 +8,9 @@
 }
 .Caulenh {
   padding: auto;
+  margin-left:0;
   border: 3px solid blue;
-  max-width: 50%;
+  max-width: 70%;
 }
 h1 {
   color: gray;
