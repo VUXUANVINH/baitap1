@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Hiểu Javascript</title>
+    <link rel="stylesheet" href="timhieujs.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Tổng quan về câu lệnh điều khiển trong Javascript</h1>
+            <div class="command">
+                <h2>Câu lệnh điều khiển trong Javascript</h2>
+                <p>Ở bất cứ đâu chúng ta đều thấy mọi thứ đều phải có điều kiện. Trong Javascript cũng không phải ngoại
+                    lệ , đối với Javascript nói riêng và các ngôn ngữ lập trình khác nói chung các câu lệnh điều kiện
+                    thường
+                    có cấu trúc giống nhau
+                    . Có thể hiểu nôm na là trong ngôn ngữ lập trình thì việc thực hiện các tính toán hoặc hành động
+                    khác
+                    nhau tùy thuộc vào điều kiện boolean do lập trình viên đưa ra được đánh giá
+                    là đúng hay sai. Ngoài trường hợp xác định nhánh (branch predication), điều này luôn đạt được bằng
+                    cách
+                    thay đổi có chọn
+                    lọc luồng điều khiển dựa trên một số điều kiện.</p>
+            </div>
+            <div class="ifelse">
+                <h3>Câu lệnh If Else trong Javascript</h3>
+                <p>Lệnh If Else trong Javascript là các thực thi một đoạn code khi <strong>Điều kiện</strong> đúng và
+                    thực thi một đoạn code khác khi <strong>Điều Kiện</strong> sai .</p>
+                <p>Trong JavaScript, điều kiện là một biểu thức so sánh để đưa ra một giả thuyết.</p>
+                <ul>
+                    <li>Nếu giả thuyết đúng, đồng nghĩa với việc điều kiện đúng và điều kiện sẽ nhận giá trị là true.
+                    </li>
+                    <li>Nếu giả thuyết sai, đồng nghĩa với việc điều kiện sai và điều kiện sẽ nhận giá trị là false.
+                    </li>
+                </ul>
+                <p>Câu lệnh cơ bản</p>
+                <div class="Caulenh">
+                    <pre>
+                        <code>if</code><span>(Điều kiện)</span><code>{</code>
+                        <span>mã lệnh chạy khi điều kiện đúng</span>
+                        <code>}</code><span>else</span><code>{</code>
+                    </pre>
+                    <p>Ví dụ sử dụng lệnh If Else trong Javascript</p>
+                </div>
+                <div class="Caulenh">
+                    <pre>
+                    <code><</code><span>script</span><code>></code>
+                    <span>var p= promt("nhập phái (Nam/Nu)");</span>
+                    <span>if (p='nu'){</span> 
+                        <span>phucap=200000;</span>
+                    <span>}</span>
+                    <span>else {</span>
+                        <span>phucap=100000</span>
+                    <span>}</span>
+                    <span>alert("phụ cấp là" + phucap);</span>
+                    <code><</code><span>/script</span><code>></code>
+                </pre>
+                </div>
+                <script> var p = promt("nhập phái (Nam/Nu)");
+                    if (p = 'nu') {
+                        phucap = 200000;
+                    }
+                    else {
+                        phucap = 100000
+                    }
+                    alert("phụ cấp là" + phucap);
+                    </script>
+                <p>Câu lệnh If Else nâng cao ( If Else..If Else )</p>
+                <p>Lệnh if ... else if ... else là một dạng nâng cao của lệnh if ... else</p>
+                <p>Lệnh if ... else if ... else dùng để mở rộng phạm vi kiểm tra các điều kiện khác nếu tất cả những
+                    điều kiện phía trên là
+                    sai.</p>
+                <p>Cú Pháp</p>
+                <div class="Caulenh">
+                    <pre>
+                    <span>if(điều kiện 1){</span>
+                        <span>//đoạn mã này sẽ được thực thi nếu điều kiện 1 là đúng</span>
+                    <span>}else if(điều kiện 2){</span>
+                        <span>//đoạn mã này sẽ được thực thi nếu điều kiện 1 sai và điều kiện 2 là đúng</span>
+                    <span>}else{</span>
+                        <span>//đoạn mã này sẽ được thực thi nếu tất cả những điều kiện trên là sai</span>
+                    <span>}</span>
+                    </pre>
+                </div>
+                <p>Ví Dụ</p>
+                <pre>
+                    <code><</code><span>script</span><code>></code>
+                    <span>var a = 15;</span>
+                    <span>var b = 20;</span>
+                    <span>if(a > b){</span>
+                      <span>document.write("Giá trị biến a LỚN HƠN giá trị biến b");</span>
+                    <span>}else if(a < b){</span>
+                      <span>document.write("Giá trị biến a NHỎ HƠN giá trị biến b");</span>
+                    <span>}else{</span>
+                      <span>document.write("Giá trị biến a BẰNG giá trị biến b");</span>
+                    <span>}</span>
+                    <code><</code><span>/script</span><code>></code>
+                </pre>
+                <p>Lưu ý : Đối với lệnh If..Else..Else thì sẽ không giới hạn số lượng điều kiện</p>
+            </div>
+            <div class="switch">
+                <h2>Câu lệnh Switch Case</h2>
+                <h3>Câu lệnh Swtichcase cơ bản</h3>
+                <p>Lệnh <strong>Swtichcase</strong> có công dụng giống như lệnh if else đó là đều dùng để rẻ nhánh
+                    chương trình, ứng với mỗi nhánh sẽ có một điều kiện cụ
+                    thể và điều kiện đó phải sử dụng toán tử so sánh bằng, còn đối với lệnh if else thì bạn có thể
+                    truyền vào một mệnh đề
+                    bất kì và <strong>Sử dụng nhiều toán tử khác nhau.</strong></p>
+                <strong>Câu lệnh</strong>
+                <div class="Caulenh">
+                    <pre>
+                        <span>switch (variable)</span>
+                        <span>{</span>
+                            <span>case value_1 : {</span>
+                                <span>// do some thing
+                                 break;</span>
+                            <span>}</span>
+                            <span>case value_2 : {</span>
+                                <span>// do some thing
+                                 break;</span>
+                            <span>}</span>
+                            <span>default : {</span>
+                            <span>// do something</span>
+                            <span>}</span>
+                        <span>}</span>
+                    </pre>
+                </div>
+                <p>Nếu như trong tất cả các case không có case nào phù hợp thì nó sẽ chạy lệnh ở default, ngược lại
+                    nếu có case nào phù hợp
+                    thì chương trình sẽ chạy trong case đó, đồng thời lệnh break sẽ giúp chương trình thoát khỏi
+                    lệnh switch, còn nếu bạn
+                    không thêm lệnh break thì chương trình sẽ tiếp tục kiểm tra và chạy tiếp ở case tiếp theo.</p>
+                <strong>Quy trình</strong>
+                <ul>
+                    <li>Nếu tham số variable có giá trị là value_1 thì những đoạn code nằm bên trong case 1 sẽ được
+                        thực hiện, ngược lại nó sẽ
+                        nhảy xuống case tiếp theo.</li>
+                    <li>Lúc này nếu variable có giá trị là value_2 thì những đoạn code trong case 2 sẽ được thực
+                        hiện, ngược lại nó kiểm tra
+                        tiếp xem còn case nào không.</li>
+                    <li>Nhận thấy không còn case nào nữa nên nó sẽ kiểm tra có lệnh default không? Vì có lệnh
+                        default nên nó sẽ chạy đoạn code
+                        trong lệnh default đó rồi thoát khỏi switch case.</li>
+
+                </ul>
+                <h3>Ví dụ lệnh switch case trong Javascript</h3>
+                <h3>Trường hợp không có default</h3>
+                <div class="Caulenh">
+                    <pre>
+                        <code><</code><span>script</span><code>></code>
+                        <span>var color = prompt("Nhập màu cần kiểm tra");</span>
+                        <span>switch (color){</span>
+                            <span>case 'blue' :</span>
+                                 <span>document.write("Bạn nhập màu đỏ, đúng rồi đó");</span>
+                                 <span>break;</span>
+                            <span>case 'yellow' :</span>
+                                <span>document.write("Bạn nhập màu vàng, đúng rồi đó");</span>
+                                <span>break;</span>
+                            <span>{</span>
+                        <code><</code><span>/script</span><code>></code>
+                    </pre>
+                </div>
+                <p>Trong trường hợp này chỉ có thể chọn xanh dương (blue) hoặc vàng (Yellow) . Không thì nó sẽ không
+                    ra kết quả</p>
+                <h3>Trường hợp không có break</h3>
+                <div class="Caulenh">
+                    <pre>
+                            <span>var color = prompt("Nhập màu cần kiểm tra");</span>
+                            <span>switch (color){</span>
+                                <span>case 'red' :</span>
+                                    <span>document.write("Bạn nhập màu đỏ, đúng rồi đó");</span>
+                                <span>case 'yellow' :</span>
+                                    <span>document.write("Bạn nhập màu vàng, đúng rồi đó");</span>
+                                    <span>break;</span>
+                                <span>default :</span>
+                                    <span>document.write("Màu bạn nhập không có trong hệ thống");</span>
+                            <span>}</span>
+                        </pre>
+                </div>
+                <p>Trường hợp này nếu bạn nhập vào màu đỏ (red) thì chương trình sẽ in ra cả lệnh ở case màu vàng
+                    (yellow) phía dưới, lý do
+                    là trong case màu đỏ ta không sử dụng lệnh break để thoát khỏi lệnh switch nên nó sẽ chạy thẳng
+                    xuống case phía dưới
+                    luôn mà không cần kiểm tra điều kiện.</p>
+                <div class="Caulenh">
+                    <pre>
+                            <code><</code><span>script</span><code>></code>
+                                <span>var color = prompt("Nhập màu cần kiểm tra");</span>
+                                <span>switch (color){</span>
+                                    <span>case 'red' :</span>
+                                        <span>document.write("Bạn nhập màu đỏ, đúng rồi đó");</span>
+                                    <span>case 'yellow' :</span>
+                                        <span>document.write("Bạn nhập màu xanh, đúng rồi đó");</span>
+                                        <span>break;</span>
+                                    <span>default :</span>
+                                        <span>document.write("Màu bạn nhập không có trong hệ thống");</span>
+                            <span>}</span>
+                            <code><</code><span>/script</span><code>></code>
+                        </pre>
+                </div>
+                <p>Giả sử bạn thêm một case nữa cho màu xanh (blue), lúc nếu bạn nhập vào màu đỏ (red) thì kết quả
+                    chỉ in thêm lệnh màu
+                    vàng (yellow) thôi. Từ đó suy ra rằng nếu không có break thì nó chỉ chạy luôn case đầu tiên phía
+                    dưới nó</p>
+                <h3>Trường hợp gôm nhóm case</h3>
+                <p>Nếu bạn để ý kỹ hơn thì thì thấy rằng nếu người dùng nhập vào màu đỏ (red), vàng (yellow) và xanh
+                    (blue) thì đều có
+                    thông báo nhập đúng. Vậy tai sao mình không gôm ba trường hợp đó thành một thôi.</p>
+                <div class="Caulenh">
+                    <pre>
+                        <code><</code><span>script</span><code>></code>
+                                <span>var color = prompt("Nhập màu cần kiểm tra");</span>
+                                <span>switch (color){</span>
+                                    <span>case 'red' :</span>
+                                        <span>document.write("Bạn nhập màu đỏ, đúng rồi đó");</span>
+                                    <span>case 'yellow' :</span>
+                                        <span>document.write("Bạn nhập màu xanh, đúng rồi đó");</span>
+                                        <span>break;</span>
+                                    <span>default :</span>
+                                        <span>document.write("Màu bạn nhập không có trong hệ thống");</span>
+                        <span>}</span>
+                        <code><</code><span>/script</span><code>></code>
+                    </pre>
+                </div>
+
+            </div>
+            <div class="forwhile">
+                <h2>Vòng lặp For và Vòng lặp While</h2>
+                <h3>Vòng lặp For</h3>
+                <p>Một trong những cấu trúc điều khiển trong javascript thường hay dùng là lệnh lặp for. Lệnh này dùng
+                    để lặp một đoạn code
+                    với số lần lặp <strong>xác định</strong>.</p>
+                <strong>Câu lệnh</strong>
+                <div class="Caulenh">
+                    <pre>
+                    <span>for (let i=0 ; i< 10 ; i++) {</span>
+                    <span>//thực hiện</span>
+                    <span>}</span>
+                </pre>
+                </div>
+                <p>Trong đó </p>
+                <ul>
+                    <li>let i = 0 : khởi tạo biến cho vòng lặp</li>
+                    <li>i < 10 : điều kiện để vòng lặp thực hiện</li>
+                    <li>i++ : tăng giá trị biến chạy lên 1 mỗi khi thực hiện xong hành động</li>
+                </ul>
+                <p>Ví dụ vòng lặp For</p>
+                <div class="Caulenh">
+                    <pre>
+                    <code><</code><span>script</span><code>></code>
+                    <span>for (let t = 0; t <= 12; t++) {</span>
+                        <span>document.write('Tháng ' + t + '<br>');</span>
+                    <span>}</span>
+                    <code><</code><span>/script</span><code>></code>
+                </pre>
+                </div>
+                <h3>Lệnh lặp While</h3>
+                <p>Lệnh lặp while trong javascript dùng để thực hiện lặp đi lặp lại đoạn code khi <strong>điều
+                        kiện</strong> là còn đúng, lệnh while sẽ dừng
+                    khi <strong>điều kiện</strong> là sai. Điều kiện được kiểm tra trước khi đoạn code được thực hiện.
+                </p>
+                <p>Câu lệnh</p>
+                <div class="Caulenh">
+                    <pre>
+                <span>while (điềukiện ) {</span>
+                    <span>//Code thực hiện lặp lại khi điềukiện là đúng</span></pre>
+                    <span>}</span>
+                </div>
+                <strong>Ví dụ</strong>
+                <div class="Caulenh">
+                    <pre>
+                    <code><</code><span>script</span><code>></code>
+                    <span>var n = 1;</span>
+                    <span>while ( n <= 31) {</span>
+                        <span>document.write(n + " ");</span>
+                        <span>n++; //thay đổi giá trị của n để đến 1 lúc điều kiện sẽ sai</span>
+                    <span>}</span>
+                    <code><</code><span>/script</span><code>></code>
+                </pre>
+                </div>
+            </div>
+            <div class="Trycatch">
+                <h2>Xử lý với Try Catch</h2>
+                <p>Câu lệnh try chứa một khối try, chứa một hay nhiều câu lệnh ({} phải luôn được sử dụng, cũng cho các
+                    câu lệnh đơn), và
+                    ít nhất một mệnh đề catch hoặc mệnh đề cuối cùng, hoặc cả hai. Nghĩa là, có ba dạng của câu lệnh
+                    try: 1. try...catch 2.
+                    try...finally 3. try...catch...finally Mệnh đề catch chứa các câu lệnh xác định phải làm gì nếu một
+                    ngoại lệ bị ném
+                    trong khối try. Đó là, bạn muốn thử khối để thành công, và nếu nó không thành công và bạn muốn kiểm
+                    soát để vượt qua đến
+                    khối catch. Nếu bất kỳ câu lệnh nào trong khối try (hoặc trong một hàm được gọi là từ bên trong khối
+                    try) sẽ ném ra một
+                    ngoại lệ, điều khiển ngay lập tức chuyển sang mệnh đề catch. Nếu không có ngoại lệ được ném vào khối
+                    try, mệnh đề catch
+                    được bỏ qua.</p>
+                <p>Câu lệnh</p>
+                <div class="Caulenh">
+                    <pre>
+                    <span>try {</span>
+                        <span>// Quăng lỗi ra</span>
+                        <span>throw("Noi dung loi");</span>
+                        <span>} catch (e){</span>
+                        <span>// Đón nhận lỗi và in ra</span>
+                        <span>// Vị trí này chỉ chạy khi ở try có quăng lỗi hoặc ở try</span>
+                        <span>// sử dụng sai cú pháp ...</span>
+                        <span>console.log(e.message);</span>
+                        <span>} finally{</span>
+                        <span>// Cuối cùng chạy cái này</span>
+                        <span>// Luôn luôn chạy sau cùng</span>
+                        <span>console.log('End of try cache');</span>
+                    <span>}</span>
+                </pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
